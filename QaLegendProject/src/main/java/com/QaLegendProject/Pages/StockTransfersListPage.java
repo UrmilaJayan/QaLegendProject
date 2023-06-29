@@ -44,10 +44,25 @@ public class StockTransfersListPage {
 	List<WebElement>rowElements;
 	@FindBy(tagName="td")
 	List<WebElement>particRow;
+	
+	@FindBy(xpath="//a[@class='btn btn-block btn-primary']")
+	WebElement addButton;
 	@FindBy(id="ref_no")
 	WebElement referenceNo;
 	@FindBy(id="select2-location_id-container")
-	WebElement locationDropdown;
+	WebElement locationFromDropdown;
+	@FindBy(id="select2-transfer_location_id-container")
+	WebElement locationToDropdown;
+	@FindBy(id="search_product_for_srock_adjustment")
+	WebElement searchProduct;
+	@FindBy(id="ui-id-1")
+	WebElement productApple;
+	@FindBy(id="save_stock_transfer")
+	WebElement saveProduct;
+	@FindBy(xpath="//span[text()='Demo Company (BL0001)']")
+	WebElement selectDemoCompany;
+	
+	
 	
 	
 
@@ -67,6 +82,7 @@ public class StockTransfersListPage {
 		stockTransferMenu.click();
 		listStockTransferSubMenu.click();
 	}
+	
 	public void selectFromShowEntriesDropDown(int showEntriesIndex)
 	{
 		PageUtilitiesPro.selectClassDropdown( showEntriesDropdown).selectByIndex(showEntriesIndex);

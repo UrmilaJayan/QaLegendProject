@@ -19,6 +19,7 @@ public class StockTransferListTest extends TestBasePro {
 	  objStockTra=new StockTransfersListPage(driver);
 	  objStockTra.clickListStockTransferSubMenu();
   }
+ 
   @Test(priority=7,description="Validating show entries dropdown button",retryAnalyzer=com.QaLegendProject.Listeners.RetryAnalyzer.class)
   public void checkingShowEntriesDropdownText() 
   {
