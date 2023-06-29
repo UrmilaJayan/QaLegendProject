@@ -5,10 +5,13 @@
 <listener class-name="com.PageObjectModel.Listners.TestListners"></listener>
 	</listeners>
   <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="com.QaLegendProject.Scripts.StockTransferListTest"/>
+      
       <class name="com.QaLegendProject.Base.TestBasePro"/>
       <class name="com.QaLegendProject.Scripts.LoginTest"/>
+      <class name="com.QaLegendProject.Scripts.AddPurchaseTest"/>
+      <class name="com.QaLegendProject.Scripts.StockTransferListTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
